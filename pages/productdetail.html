@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product details</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/responsiveStyles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navbar code starts here -->
+      <nav>
+        <!-- site logo -->
+        <div class="logo">
+          <a href="/">
+            <!-- <span style="color: white">L</span> -->
+          <span style="color: orange">L</span>
+          <span style="color: blueviolet">E</span>
+          <span style="color: palegoldenrod">X</span>
+          <span style="color: orangered">A</span>
+          <span style="color: plum">C</span>
+          <span style="color: gainsboro">A</span>
+          <span style="color: cyan">R</span>
+          <span style="color: greenyellow">T</span>
+          </a>
+        </div>
+
+
+        <!-- nav-options -->
+        <div class="nav-options">
+          <a href="./products.html" class="primary-btn">products</a>
+        <a href="./aboutUs.html" class="primary-btn">aboutUs</a>
+
+
+          <a href="./cart.html" class="primary-btn cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cartCount"></span>
+          </a>
+
+          <button class="primary-btn nav-btn" id="sideBar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="primary-btn login-btn" id="login">sign in</button>
+        </div>
+      </nav>
+      <!-- navbar code ends here -->
+
+      <!-- openSide -->
+      <div class="open-side-bar">
+        <a href="./products.html" class="primary-btn">products</a>
+        <a href="./aboutUs.html" class="primary-btn">aboutUs</a>
+
+
+        <a href="../pages/cart.html" class="primary-btn cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <!-- <p>show items</p> -->
+          <span class="cartCount"></span>
+        </a>
+
+        <button class="primary-btn login-btn" id="responsiveLogin">
+          sign in
+        </button>
+      </div>
+
+      <!-- login/signup window -->
+      <div class="account">
+        <div class="userImage">
+          <i class="fa-solid fa-user fa-2xl"></i>
+        </div>
+
+        <!-- login form -->
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="name">Enter UserName</label>
+            <input
+              type="text"
+              id="name"
+              name="userName"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Enter Password</label>
+            <input
+              type="text"
+              id="password"
+              name="password"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <p class="link">
+            Don't have an account <span id="toogleSignUp">sign up</span> for
+            free
+          </p>
+          <p class="link"><a href="#">forgot password</a></p>
+
+          <button class="primary-btn submit">login</button>
+        </form>
+
+        <!-- signup form -->
+
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="userName">Enter UserName</label>
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="your_password">Enter Password</label>
+            <input
+              type="text"
+              id="your_password"
+              name="your_password"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="text"
+              id="confirmPassword"
+              name="confirmPassword"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <p class="link">
+            Don't have an account <span id="toogleLogin">login</span> for free
+          </p>
+          <p class="link"><a href="#">forgot password</a></p>
+
+          <button class="primary-btn submit" style="background-color: seagreen">
+            signup
+          </button>
+        </form>
+      </div>
+
+      <!-- header-banner -->
+    </header>
+
+    <main>
+      <div class="product-detail-section">
+        <div class="image-section">
+          <img
+          src="https://rukminim1.flixcart.com/image/612/612/l5h2xe80/kurta/x/6/n/xl-kast-tile-green-majestic-man-original-imagg4z33hu4kzpv.jpeg?q=70"
+          alt=""
+          class="main-image"
+          />
+    
+          <div class="related-images">
+            <!-- dynamicaally all the data will come from js -->
+          </div>
+        
+    
+        </div>
+
+        <div class="detail-section">
+          <h1 class="title">Men Embroidered Jacquard Straight Kurta</h1>
+          <p class="p-content">Brand: <span class="p-title">LEVI'S</span></p>
+          <p class="p-content"><b>Category:- </b> <span id="category">Category</span></p>
+          <p class="p-content">
+            Description:
+            <span
+              class="p-title"
+              id="description"
+              style="font-weight: normal; font-style: normal"
+              >A traditional garment embodying elegance and grace. Crafted from
+              fine fabrics, it features intricate embroidery and a relaxed fit,
+              providing comfort and style.</span
+            >
+          </p>
+
+          <p class="p-content">
+            Availble <span class="p-title" id="Stock">in Stock</span>
+          </p>
+
+          <div class="price-section">
+            <p class="price">₹ 2499</p>
+            <p class="discount">68 %</p>
+            <p class="discountPrice">₹ 799</p>
+          </div>
+
+          <div class="size-section">
+            <p>Availble Sizes</p>
+            <div>
+              <span>
+                <input type="radio" name="size" id="s" value="S" /><label for="s">
+                  S size
+                </label></span
+              >
+              <span>
+                <input type="radio" name="size" id="m" value="M" /><label for="m">
+                  M size
+                </label></span
+              >
+              <span>
+                <input type="radio" name="size" id="l" value="L" /><label for="l">
+                  L size
+                </label></span
+              >
+              <span>
+                <input type="radio" name="size" id="xl" value="XL" /><label for="xl">
+                  XL size
+                </label>
+                </span>
+
+                
+              <span>
+                <input type="radio" name="size" id="xxl" value="XXL" /><label for="xxl">
+                  XXL size
+                </label>
+                </span>
+            </div>
+          </div>
+
+          <div class="product-quantity">
+            <button id="decrease">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            
+            <input type="number" id="qty" class="qty-input"  value="1" readonly/>
+            
+            <button id="increase">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+
+          <div>
+            <button class="add-in-cart" id="addinCart">
+              Add Product In Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-links">
+        <div>
+          <!-- track order -->
+          <button class="primary-btn quick-link-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              fill="currentColor"
+              class="bi bi-activity"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"
+              />
+            </svg>
+            <p>TRACK ORDER</p>
+          </button>
+
+          <!-- product wishlist -->
+          <button class="primary-btn quick-link-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              fill="currentColor"
+              class="bi bi-bag-check-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"
+              />
+            </svg>
+            <p>BUY PRODUCT</p>
+          </button>
+
+          <!-- book order -->
+          <button class="primary-btn quick-link-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              fill="currentColor"
+              class="bi bi-bookmark-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"
+              />
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4"
+              />
+            </svg>
+            <p style="text-align: left">
+              <span>ADD</span> <br />
+              TO WISHLIST
+            </p>
+          </button>
+
+          <!-- show orders -->
+          <button class="primary-btn quick-link-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              fill="currentColor"
+              class="bi bi-box-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"
+              />
+            </svg>
+            <p style="text-align: left">SHOW ORDERS</p>
+          </button>
+
+          <!-- show orders -->
+          <button class="primary-btn quick-link-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              fill="currentColor"
+              class="bi bi-chat-dots-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+              />
+            </svg>
+            <p style="text-align: left">CUSTOMER CARE</p>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>made with</p>
+      <p>
+        <i class="fa-solid fa-heart" style="color: #ef0606;"></i>
+
+      </p>
+      <p>by vishwas</p>
+    </footer>
+
+    <script src="../app/app.js"></script>
+    <script src="../app/product_detail.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/responsiveStyles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navbar code starts here -->
+      <nav>
+        <!-- site logo -->
+        <div class="logo">
+          <a href="/">
+            <!-- <span style="color: white">L</span> -->
+            <span style="color: orange">L</span>
+            <span style="color: blueviolet">E</span>
+            <span style="color: palegoldenrod">X</span>
+            <span style="color: orangered">A</span>
+            <span style="color: plum">C</span>
+            <span style="color: gainsboro">A</span>
+            <span style="color: cyan">R</span>
+            <span style="color: greenyellow">T</span>
+          </a>
+        </div>
+
+        <!-- nav-options -->
+        <div class="nav-options">
+          <a href="./products.html" class="primary-btn">products</a>
+          <a href="./aboutUs.html" class="primary-btn">aboutUs</a>
+
+          <a href="./cart.html" class="primary-btn cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cartCount"></span>
+
+          </a>
+
+          <button class="primary-btn nav-btn" id="sideBar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="primary-btn login-btn" id="login">sign in</button>
+        </div>
+      </nav>
+      <!-- navbar code ends here -->
+
+      <!-- openSide -->
+      <div class="open-side-bar">
+        <a href="./products.html" class="primary-btn">products</a>
+        <a href="./aboutUs.html" class="primary-btn">aboutUs</a>
+
+        <a href="../pages/cart.html" class="primary-btn cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <!-- <p>show items</p> -->
+          <span class="cartCount"></span>
+
+        </a>
+
+        <button class="primary-btn login-btn" id="responsiveLogin">
+          sign in
+        </button>
+      </div>
+
+      <!-- login/signup window -->
+      <div class="account">
+        <div class="userImage">
+          <i class="fa-solid fa-user fa-2xl"></i>
+        </div>
+
+        <!-- login form -->
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="name">Enter UserName</label>
+            <input
+              type="text"
+              id="name"
+              name="userName"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Enter Password</label>
+            <input
+              type="text"
+              id="password"
+              name="password"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <p class="link">
+            Don't have an account <span id="toogleSignUp">sign up</span> for
+            free
+          </p>
+          <p class="link"><a href="#">forgot password</a></p>
+
+          <button class="primary-btn submit">login</button>
+        </form>
+
+        <!-- signup form -->
+
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="userName">Enter UserName</label>
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="your_password">Enter Password</label>
+            <input
+              type="text"
+              id="your_password"
+              name="your_password"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="text"
+              id="confirmPassword"
+              name="confirmPassword"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <p class="link">
+            Don't have an account <span id="toogleLogin">login</span> for free
+          </p>
+          <p class="link"><a href="#">forgot password</a></p>
+
+          <button class="primary-btn submit" style="background-color: seagreen">
+            signup
+          </button>
+        </form>
+      </div>
+
+      <!-- header-banner -->
+    </header>
+
+    <main>
+      <div class="about-us-container">
+        <div class="about-banner">ABOUT US</div>
+
+        <div class="about-us-section">
+          <div class="profile">
+            <img src="../assets/images/Vishwas.jpeg" alt="" />
+
+            <div class="about-me">
+              <h2>VISHWAS DESHPANDEY</h2>
+              <h5>MERN STACK developer</h5>
+
+              <div class="contact-details">
+                <!-- email -->
+                <div class="contacts">
+                  <span>
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <span>vishwas@lexacart.com</span>
+                </div>
+
+                <!-- mobile number -->
+                <div class="contacts">
+                  <span>
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <span>+91 0000 0000 12</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="description">
+            <h4>ABOUT LEXACART</h4>
+
+            <div class="about-us-description">
+              <p>
+                LEXACART is an online ecommerce project developed and designed
+                by <span>VISHWAS DESHPANDEY</span>
+              </p>
+
+              <p>
+                Hi, I am Vishwas Deshpandey, and i am a MERN stack web developer
+                and in this project the tech stack which is used is html css and
+                javascript along with this the project uses localStorage which
+                is used to store the cart products in a real time
+              </p>
+
+              <p>
+                In this Project all the Products Are not hard coded instead all
+                the data is fetching dynamically using JavaScript, along with
+                this the product detail of the product is also fetched
+                dynamically in real time.
+              </p>
+
+              <p>
+                In this Project the Cart Functionallity is also diffrently
+                developed from other projects here we are adding the cart items
+                in this diffent ways:
+
+                <li>
+                  If The Product not exist already in the cart then it will add
+                  a new product
+                </li>
+
+                <li>
+                  If the Product is already Exist in the Cart and the size
+                  selected is same stored in the cart then the quantiy will
+                  increase
+                </li>
+
+                <li>
+                  If the product is already added but size is diffrent then the
+                  new product is added in the cart
+                </li>
+
+                <li>
+                  We can also change the qunatity of the product in the cart or
+                  also when adding the item in the cart it takes the real time
+                  quantiy and add in the cart
+                </li>
+              </p>
+
+              <p>
+                you can check the complete source code of the website available
+                on my github link <a href="#">check it out here.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>made with</p>
+      <p>
+        <i class="fa-solid fa-heart" style="color: #ef0606;"></i>
+      </p>
+      <p>by vishwas</p>
+    </footer>
+
+    <script src="../app/app.js"></script>
+  </body>
+</html>

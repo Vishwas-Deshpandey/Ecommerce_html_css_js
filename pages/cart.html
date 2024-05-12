@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/responsiveStyles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navbar code starts here -->
+      <nav>
+        <!-- site logo -->
+        <div class="logo">
+          <a href="/">
+            <!-- <span style="color: white">L</span> -->
+            <span style="color: orange">L</span>
+            <span style="color: blueviolet">E</span>
+            <span style="color: palegoldenrod">X</span>
+            <span style="color: orangered">A</span>
+            <span style="color: plum">C</span>
+            <span style="color: gainsboro">A</span>
+            <span style="color: cyan">R</span>
+            <span style="color: greenyellow">T</span>
+          </a>
+        </div>
+
+        <!-- nav-options -->
+        <div class="nav-options">
+          <a href="./products.html" class="primary-btn">products</a>
+          <a href="./aboutUs.html" class="primary-btn">aboutUs</a>
+
+          <a href="#" class="primary-btn cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cartCount"></span>
+
+          </a>
+
+          <button class="primary-btn nav-btn" id="sideBar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="primary-btn login-btn" id="login">sign in</button>
+        </div>
+      </nav>
+      <!-- navbar code ends here -->
+
+      <!-- openSide -->
+      <div class="open-side-bar">
+        <a href="./products.html" class="primary-btn">products</a>
+        <a href="./aboutUs.html" class="primary-btn">aboutUs</a>
+
+        <a href="#" class="primary-btn cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <!-- <p>show items</p> -->
+          <span class="cartCount"></span>
+
+        </a>
+
+        <button class="primary-btn login-btn" id="responsiveLogin">
+          sign in
+        </button>
+      </div>
+
+      <!-- login/signup window -->
+      <div class="account">
+        <div class="userImage">
+          <i class="fa-solid fa-user fa-2xl"></i>
+        </div>
+
+        <!-- login form -->
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="name">Enter UserName</label>
+            <input
+              type="text"
+              id="name"
+              name="userName"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Enter Password</label>
+            <input
+              type="text"
+              id="password"
+              name="password"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <p class="link">
+            Don't have an account <span id="toogleSignUp">sign up</span> for
+            free
+          </p>
+          <p class="link"><a href="#">forgot password</a></p>
+
+          <button class="primary-btn submit">login</button>
+        </form>
+
+        <!-- signup form -->
+
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="userName">Enter UserName</label>
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="your_password">Enter Password</label>
+            <input
+              type="text"
+              id="your_password"
+              name="your_password"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="text"
+              id="confirmPassword"
+              name="confirmPassword"
+              class="form-input"
+              autocomplete="off"
+            />
+          </div>
+
+          <p class="link">
+            Don't have an account <span id="toogleLogin">login</span> for free
+          </p>
+          <p class="link"><a href="#">forgot password</a></p>
+
+          <button class="primary-btn submit" style="background-color: seagreen">
+            signup
+          </button>
+        </form>
+      </div>
+
+      <!-- header-banner -->
+    </header>
+
+    <main>
+      <div class="cart-container">
+        <h2>My Cart</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Quantity</th>
+              <th>Size</th>
+              <th>Price</th>
+              <th>Subtotal</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+
+        <div class="checkout">
+          <p>CHECKOUT</p>
+
+          <div class="total-payment">
+            <p class="h-1">total payment</p>
+            <p></p>
+          </div>
+
+          <div class="total-items">
+            <p class="h-1">total items</p>
+            <p></p>
+          </div>
+
+          <div class="payment-mode">
+            <select>
+              <option value="Cash on Delivery">Cash on Delivery</option>
+              <option value="Credit Card">Credit Card</option>
+              <option value="Net Banking">Net Banking</option>
+              <option value="upi">Upi - for India</option>
+            </select>
+          </div>
+
+          <button class="pay_and_checkout">Proceed To CheckOut</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>made with</p>
+      <p>
+        <i class="fa-solid fa-heart" style="color: #ef0606;"></i>
+      </p>
+      <p>by vishwas</p>
+    </footer>
+
+    <script src="../app/app.js"></script>
+    <script type="module" src="../app/cart.js"></script>
+  </body>
+</html>
